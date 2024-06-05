@@ -11,9 +11,9 @@ public class Main {
    */
 
   public static void main(String[] args) {
-    Flower flower1 = new FlowerFirstCategory(FlowerFirstCategoryEnum.PEONIES, 30, FreshnessLevel.FRESH);
+    Flower flower1 = new FlowerFirstCategory(FlowerFirstCategoryEnum.PEONIES, 30, FreshnessLevel.BAD);
     Flower flower2 = new FlowerSecondCategory(FlowerSecondCategoryEnum.MATTHIOLA, 60, FreshnessLevel.FRESH);
-    Flower flower3 = new FlowerThirdCategory(FlowerThirdCategoryEnum.ASTILBE, 30, FreshnessLevel.FRESH);
+    Flower flower3 = new FlowerThirdCategory(FlowerThirdCategoryEnum.ASTILBE, 30, FreshnessLevel.MEDIUM_FRESHNESS);
 
 
     List<Flower> flowerList = new ArrayList<>();
@@ -26,8 +26,16 @@ public class Main {
 //    }
 
     Bouquet bouquet1 = new Bouquet(0, flowerList, Accessories.RIBBON);
+    /** Стоимость букета **/
+    System.out.println(bouquet1.getCost());
+
+    /** Сортировка букета **/
+    System.out.println(bouquet1);
+    bouquet1.sortBouquet();
     System.out.println(bouquet1);
 
+    /** Нахождение цветка по диапазону длин стеблей**/
 
+    bouquet1.flowerByRangeStemLength(15, 31);
   }
 }

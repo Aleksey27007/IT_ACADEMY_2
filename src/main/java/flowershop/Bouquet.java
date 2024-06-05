@@ -1,12 +1,15 @@
 package flowershop;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class Bouquet {
   private int id;
   private List<Flower> bouquet;
   private Accessories accessories;
-  private float cost;
+//  private Flower flower;
 
   protected Bouquet(int id, List<Flower> bouquet, Accessories accessories) {
     this.id = id;
@@ -38,23 +41,31 @@ public class Bouquet {
     this.accessories = accessories;
   }
 
+  protected void flowerByRangeStemLength(int A, int B) {
+    for (int i = 0; i < bouquet.size(); i++) {
+      if (this.bouquet.get(i).getStemLength() > A & this.bouquet.get(i).getStemLength() < B) {
+        System.out.println(bouquet.get(i));
+      }
+    }
+  }
+
   protected float getCost() {
     float sum = 0;
     for (int i = 0; i < this.bouquet.size(); i++) {
-
+      sum += bouquet.get(i).getCost();
     }
+    sum += this.accessories.getCost();
     return sum;
   }
 
-//  protected void addAFlowerToTheBouquet(Flower flower) {
-//    this.bouquet.add(flower);
-//  }
-//
-//  protected void removeFlowerFromBouquet(Flower flower) {
-//    this.bouquet.remove(flower);
-//  }
-
-
+  protected void sortBouquet() {
+    Collections.sort(this.bouquet, new Comparator<Flower>() {
+      @Override
+      public int compare(Flower o1, Flower o2) {
+        return o1.getLevel() - o2.getLevel();
+      }
+    });
+  }
   @Override
   public String toString() {
     return "Bouquet{" +
