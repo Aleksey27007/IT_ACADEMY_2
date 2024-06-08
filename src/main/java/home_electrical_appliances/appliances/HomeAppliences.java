@@ -3,6 +3,9 @@ package home_electrical_appliances.appliances;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
 
 public class HomeAppliences {
   private ArrayList<AbstractHomeAppliences> homeAppliencesArrayList;
@@ -34,5 +37,14 @@ public class HomeAppliences {
         return o1.getWattage() - o2.getWattage();
       }
     });
+  }
+
+  public void findApplience(char firsLetterApplience, int wattageA, int wattageB) {
+    for (int i = 0; i < homeAppliencesArrayList.size(); i++) {
+      if (homeAppliencesArrayList.get(i).getName().charAt(0) == firsLetterApplience &&
+          homeAppliencesArrayList.get(i).getWattage() > wattageA && wattageB > homeAppliencesArrayList.get(i).getWattage()) {
+        System.out.println(homeAppliencesArrayList.get(i));
+      }
+    }
   }
 }

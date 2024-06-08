@@ -61,5 +61,7 @@ public class Main {
     homeAppliences.sortByWattage();
     homeAppliences.printHomeAppliencesList();
 
+    /** find by parmameters **/
+    homeAppliences.findApplience('T', 25, 55);
   }
 }
