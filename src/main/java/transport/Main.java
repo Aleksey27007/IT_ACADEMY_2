@@ -1,8 +1,8 @@
-package Transport;
+package transport;
 
-import Transport.transport.train.RailwayCarriage;
-import Transport.transport.train.train_tools.Train;
-import Transport.transport.train.train_tools.Trains;
+import transport.transport.train.RailwayCarriage;
+import transport.transport.train.train_tools.Train;
+import transport.transport.train.train_tools.Trains;
 import java.util.List;
 
 public class Main {

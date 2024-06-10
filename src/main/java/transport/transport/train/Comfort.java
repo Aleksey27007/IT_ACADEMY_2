@@ -1,4 +1,4 @@
-package Transport.transport.train;
+package transport.transport.train;
 
 public enum Comfort {
   FIRST_CLASS("Coupe", 1),

@@ -1,10 +1,10 @@
-package Transport.transport.train.train_tools;
+package transport.transport.train.train_tools;
 
-import Transport.transport.train.Comfort;
-import Transport.transport.train.RailwayCarriage;
-import Transport.transport.train.rolling_stock_of_the_train.LargeCarriage;
-import Transport.transport.train.rolling_stock_of_the_train.MiddleCarriage;
-import Transport.transport.train.rolling_stock_of_the_train.SmallCarriage;
+import transport.transport.train.Comfort;
+import transport.transport.train.RailwayCarriage;
+import transport.transport.train.rolling_stock_of_the_train.LargeCarriage;
+import transport.transport.train.rolling_stock_of_the_train.MiddleCarriage;
+import transport.transport.train.rolling_stock_of_the_train.SmallCarriage;
 
 public enum Trains {
   PASSENGER_TRAIN(new RailwayCarriage[]{

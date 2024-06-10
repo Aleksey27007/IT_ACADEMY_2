@@ -1,6 +1,6 @@
-package Transport.transport.train.train_tools;
+package transport.transport.train.train_tools;
 
-import Transport.transport.train.RailwayCarriage;
+import transport.transport.train.RailwayCarriage;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;

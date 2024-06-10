@@ -1,7 +1,7 @@
-package Transport.transport.train.rolling_stock_of_the_train;
+package transport.transport.train.rolling_stock_of_the_train;
 
-import Transport.transport.train.Comfort;
-import Transport.transport.train.RailwayCarriage;
+import transport.transport.train.Comfort;
+import transport.transport.train.RailwayCarriage;
 
 public class LargeCarriage extends RailwayCarriage {
 

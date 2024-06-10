@@ -1,4 +1,4 @@
-package Transport.transport.train;
+package transport.transport.train;
 
 
 public class RailwayCarriage implements Comparable<RailwayCarriage> {
