@@ -2,7 +2,6 @@ package accounts;
 
 import accounts.accounts.Account;
 import accounts.accounts.client_account.Client;
-import java.util.Comparator;
 import java.util.List;
 import java.util.UUID;
 
