@@ -1,0 +1,295 @@
+a{
+	color: #fff;
+	text-decoration: none;
+}
+html{
+	background: #FFF8CC;
+	min-height: 100%;
+	font-family: Helvetica;
+	display: flex;
+	flex-direction: column;
+}
+body{
+	margin: 0;
+	padding: 0 15px;
+	display: flex;
+	flex-direction: column;
+	flex: auto;
+}
+h1{
+	margin-top: 0;
+}
+h1, p{
+	color: #006064;
+}
+img{
+	border: 0;
+}
+
+.btn {
+  border: none;
+  font-family: 'Lato';
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 25px 80px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* Button 1 */
+.btn-1 {
+  background: #3498db;
+  color: #fff;
+}
+
+.btn-1:hover {
+  background: #2980b9;
+}
+
+.btn-1:active {
+  background: #2980b9;
+  top: 2px;
+}
+
+.btn-1:before {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  line-height: 3;
+  font-size: 140%;
+  width: 60px;
+}
+
+.button {
+  border: none;
+  font-family: 'Lato';
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 10px 45px;
+  display: inline;
+  margin: 10px 35px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.button:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-2 {
+  background: #3498db;
+  color: #fff;
+}
+
+.btn-2:hover {
+  background: #2980b9;
+}
+
+.btn-2:active {
+  background: #2980b9;
+  top: 2px;
+}
+
+.btn-2:before {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  line-height: 3;
+  font-size: 140%;
+  width: 60px;
+}
+ 
+.header{
+	width: 100%;
+	min-width: 460px;
+	max-width: 960px;
+	margin: 0 auto 30px;
+	padding: 30px 0 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	box-sizing: border-box;
+}
+.logo{
+	font-size: 1.5rem;
+	color: #fff;
+	text-decoration: none;
+	margin: 5px 0 0 5px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex: none;
+	align-items: center;
+	background: #839FFF;
+	width: 130px;
+	height: 50px;
+}
+.nav{
+	display: flex;
+	flex-wrap: wrap;
+	margin: -5px 0 0 -5px;
+}
+.nav-item{
+	font-size: 1.0rem;
+	color: #fff;
+	text-decoration: none;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	margin: 5px 0 0 5px;
+	flex: none;
+	align-items: center;
+	width: 140px;
+	height: 60px;
+}
+.sqr{
+	height: 300px;
+	width: 300px;
+	background: #FFDB89;
+}
+		
+.main{
+	width: 100%;
+	min-width: 460px;
+	max-width: 960px;
+	margin: auto;
+	flex: auto;
+	box-sizing: border-box;
+}
+.box{
+	font-size: 1.25rem;
+	line-height: 1.5;
+	margin: 0 0 40px -50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.box-base{
+	margin-left: 50px;
+	flex: 1 0 430px;
+}
+.box-side{
+	margin-left: 50px;
+	font: none;
+}
+.box-img{
+	max-width: 100%;
+	height: auto;
+}
+.content{
+	margin-bottom: 30px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.banners{
+	flex: 1 1 200px;
+}
+.banner{
+	background: #FFDB89;
+	width: 100%;
+	max-width: 200px;
+	max-height: 200px;
+	font-size: 3rem;
+	color: #fff;
+	margin: 0 0 30px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.posts{
+	margin: 0 0 30px 30px;
+	flex: 1 1 200px;
+}
+.comments{
+	margin: 0 0 30px 30px;
+	flex: 1 1 200px;
+}
+.comment{
+	display: flex;
+}
+.comment-side{
+	padding-right: 20px;
+	flex: none;
+}
+.comment-base{
+	flex: auto;
+}
+.comment-avatar{
+	background: #FFA985;
+	width: 50px;
+	height: 50px;
+}
+.footer{
+	width: 100%;
+	color: #000;
+	max-height: 300px;
+	max-width: 300px;
+	padding: 15px;
+	box-sizing: border-box;
+	text-decoration: none;
+	display: center;
+	margin: 10px 0 0 5px;
+}
+		
+@media screen and  (max-width: 800px) {
+	.banners{
+		margin-left: -30px;
+		display: flex;
+		flex-basis: 100%;
+	}
+	.banner{
+		margin-left: 30px;
+	}
+	.posts{
+		margin-left: 0;
+	}
+}
+@media screen and  (max-width: 600px) {
+	.content{
+		display: block;
+	}
+	.banners{
+		margin: 0;
+		display: block;
+	}
+	.banner{
+		margin-left: 0;
+	}
+	.posts{
+		margin: 0;
+	}
+}
